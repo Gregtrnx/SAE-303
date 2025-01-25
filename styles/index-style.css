@@ -4,15 +4,24 @@ body {
     transition: smooth;
     color: #fff;
     font-family: Montserrat;
+    scroll-behavior: smooth;
 }
 
-body {
+/*body {
     background-image: url(/images/fenetre\ \(1\).png);
     background-repeat: no-repeat;
     background-size: cover;
+}*/
+
+body {
+    background-color: #fafafa;
 }
 
-section{
+/***************/
+/****Header****/
+/***************/
+
+section {
     display: flex;
 }
 
@@ -40,18 +49,18 @@ header {
     max-width: calc(50px - (0.25rem * 2));
 }
 
-h1{
+h1 {
     margin: 0;
     margin-bottom: 5vh;
     text-shadow: 1px 1px 2px #00000040;
 
 }
 
-button > img{
+a>img {
     max-height: calc(80px - (0.25rem * 2));
 }
 
-button {
+a {
     all: unset;
     cursor: pointer;
     display: flex;
@@ -60,7 +69,7 @@ button {
     margin-top: 5vh;
 }
 
-h3{
+h3 {
     text-shadow: 1px 1px 2px #00000040;
 }
 
@@ -68,24 +77,113 @@ h3{
 /****Main****/
 /***************/
 
-main{
+main {
     max-width: 50vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin : auto;
+    margin: auto;
 }
 
-main > div{
+main>div {
     background-color: #00000080;
     border-radius: 3px;
     box-shadow: 0px 4px 4px 0px #00000040;
     padding: 10px;
 }
 
-h2{
+h2 {
+    color: #222;
     font-size: 7rem;
     margin: 0;
     margin-bottom: 24px;
     text-shadow: 1px 1px 2px #00000040;
+}
+
+/*********************************/
+/****Section Précipitations****/
+/********************************/
+
+.pluie {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #00000080;
+    border-radius: 3px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    padding: 5vw;
+    margin: auto;
+    margin-top: 50vh;
+}
+
+.graphiques {
+    display: flex;
+    align-items: center;
+    gap: 5vw;
+}
+
+.graphiques>div {
+    display: flex;
+    flex-direction: column;
+    gap : 24px;
+}
+
+h4 {
+    font-size: x-large;
+}
+
+/********************************/
+/****Section Températures****/
+/*******************************/
+
+.temp {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #00000080;
+    border-radius: 3px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    padding: 5vw;
+    margin: auto;
+    margin-top: 100vh;
+}
+
+/*************************/
+/****Section Climat****/
+/************************/
+
+.climat {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #00000080;
+    border-radius: 3px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    padding: 5vw;
+    margin: auto;
+    margin-top: 100vh;
+    margin-bottom: 25vh;
+}
+
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #00000080;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    font-size: 24px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+#backToTop:hover {
+    background-color: #0056b3;
+    /* Couleur au survol */
 }
