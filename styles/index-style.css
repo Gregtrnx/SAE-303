@@ -14,7 +14,7 @@ body {
 }*/
 
 body {
-    background-color: #fafafa;
+    background-color: #222;
 }
 
 /***************/
@@ -93,11 +93,15 @@ main>div {
 }
 
 h2 {
-    color: #222;
+    color: #fafafa;
     font-size: 7rem;
     margin: 0;
     margin-bottom: 24px;
     text-shadow: 1px 1px 2px #00000040;
+}
+
+p{
+    text-align :justify;
 }
 
 /*********************************/
